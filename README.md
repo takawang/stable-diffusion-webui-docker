@@ -6,6 +6,13 @@ Run Stable Diffusion on your machine with a nice UI without any hassle!
 
 Visit the wiki for [Setup](https://github.com/AbdBarho/stable-diffusion-webui-docker/wiki/Setup) and [Usage](https://github.com/AbdBarho/stable-diffusion-webui-docker/wiki/Usage) instructions, checkout the [FAQ](https://github.com/AbdBarho/stable-diffusion-webui-docker/wiki/FAQ) page if you face any problems, or create a new issue!
 
+```
+docker compose --profile download up --build
+# wait until its done, then:
+docker compose --profile auto up --build
+# where [ui] is one of: invoke | auto | auto-cpu | comfy | comfy-cpu
+```
+
 ## Features
 
 This repository provides multiple UIs for you to play around with stable diffusion:
